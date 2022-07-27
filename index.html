@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover man</title>
+    <style>
+        body{
+            background-color: rgb(9, 12, 41);
+        }
+        section{
+            height: 80vh;
+            width: 100%;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+        .field{
+            display: flex;
+            justify-content: center;
+            height: auto;
+            width: 40vw;
+            border-bottom: 10px black solid;
+            border-radius: 10px;
+        }
+        .ball{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 2px;
+            animation: bounce 1s linear infinite alternate;
+        }
+        .ball:nth-child(1){
+            animation-delay: 0s;
+            background-color: aqua;
+        }
+        .ball:nth-child(2){
+            animation-delay: .3s;
+            background-color: red;
+        }
+        .ball:nth-child(3){
+            animation-delay: .6s;
+            background-color: yellow;
+        }
+        .ball:nth-child(4){
+            animation-delay: .9s;
+            background-color: blue;
+        }
+        .ball:nth-child(5){
+            animation-delay: .0s;
+            background-color: aqua;
+            
+        }
+        .ball:nth-child(6){
+            animation-delay: .3s;
+            background-color: red;
+        }
+        .ball:nth-child(7){
+            animation-delay: .6s;
+            background-color: yellow;
+            
+        }
+        .ball:nth-child(8){
+            animation-delay: .9s;
+            background-color: blue;
+            
+        }
+        .ball:nth-child(9){
+            animation-delay: .0s;
+            background-color: aqua;
+            
+        }
+        .ball:nth-child(10){
+            animation-delay: .3s;
+            
+            background-color: red;
+        }
+        .ball:nth-child(11){
+            animation-delay: .6s;
+            background-color: yellow;
+        }
+        .ball:nth-child(12){
+            animation-delay: .9s;
+            background-color: blue;
+        }
+
+
+        /* animation */
+        @keyframes bounce {
+            0%{
+                bottom: 0;
+                left: 0;
+            }
+            100%{
+                transform: translateY(-200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="field">
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+        </div>
+    </section>
+</body>
+</html>
